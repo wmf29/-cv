@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - وعد مازن بنات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2A5C82;
+            --secondary-color: #1A3A4F;
+            --accent-color: #FFD700;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 2.5rem 1rem;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 1rem auto;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 12px;
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-right: 4px solid var(--accent-color);
+            padding-right: 1rem;
+            margin: 1.5rem 0;
+            font-size: 1.8rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateX(10px);
+            box-shadow: 2px 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-card {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .skill-card:hover::after {
+            left: 100%;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--primary-color);
+            color: white !important;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .download-btn:hover {
+            background: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                border-radius: 0;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            .profile-img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="صورة وعد مازن" class="profile-img">
+            <h1>وعد مازن علي بنات</h1>
+            <p>مطور واجهات ويب</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:waad@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
+            <div class="experience-item">
+                <h3>أعمال يدوية - ريادي</h3>
+                <p class="date">يناير 2021 - الحاضر</p>
+                <ul>
+                    <li>تصميم وتنفيذ مشاريع إبداعية</li>
+                    <li>إدارة عمليات الإنتاج والتسويق</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> التعليم</h2>
+            <div class="education-item">
+                <h3>بكالوريوس علوم الحاسوب</h3>
+                <p class="date">جامعة القدس المفتوحة | 2021-2026</p>
+                <p>تخصص: أنظمة المعلومات الحاسوبية</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-code"></i> المهارات التقنية</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5 & CSS3</div>
+                <div class="skill-card">JavaScript ES6+</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">UI/UX Design</div>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-address-card"></i> التواصل</h2>
+            <p><i class="fas fa-map-marker-alt"></i> غزة، فلسطين</p>
+            <p><i class="fas fa-phone"></i> +970 599 000 000</p>
+            <p><i class="fas fa-envelope"></i> waad@example.com</p>
+            <a href="cv.pdf" class="download-btn" download>
+                <i class="fas fa-download"></i>
+                تحميل السيرة الذاتية
+            </a>
+        </section>
+    </div>
+
+    <footer style="background: var(--secondary-color); color: white; text-align: center; padding: 1.5rem;">
+        <p>© <span id="year"></span> جميع الحقوق محفوظة | تم التطوير بواسطة <span style="color: var(--accent-color);">وعد مازن</span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // إضافة تأثيرات تفاعلية
+        document.querySelectorAll('.experience-item, .education-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'translateX(10px)';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+</body>
+</html>
